@@ -9,6 +9,14 @@ message Person {
     string name = 1;
     repeated string artist = 2;
     repeated Another another = 3;
+    enum Color{
+        BLUE= 0;
+        RED = 1;
+    }
+    enum Cups{
+        Mug = 0;
+        Cup = 1;
+    }
 }
 
 message Another {

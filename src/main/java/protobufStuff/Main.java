@@ -18,8 +18,7 @@ public class Main {
                 .addAnother(another)
                 .build();
 
-        System.out.println("email = " + cowboy.getName());
-        System.out.println("cowboy.getArtist(1) = " + cowboy.getArtist(1));
+        System.out.println(Person.Color.BLUE);
         System.out.println(cowboy.getAllFields());
     }
 }

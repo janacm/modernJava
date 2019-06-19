@@ -182,6 +182,202 @@ public final class PersonProtos {
               gen.PersonProtos.Person.class, gen.PersonProtos.Person.Builder.class);
     }
 
+    /**
+     * Protobuf enum {@code Person.Color}
+     */
+    public enum Color
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>BLUE = 0;</code>
+       */
+      BLUE(0),
+      /**
+       * <code>RED = 1;</code>
+       */
+      RED(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>BLUE = 0;</code>
+       */
+      public static final int BLUE_VALUE = 0;
+      /**
+       * <code>RED = 1;</code>
+       */
+      public static final int RED_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static Color valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static Color forNumber(int value) {
+        switch (value) {
+          case 0: return BLUE;
+          case 1: return RED;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<Color>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          Color> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<Color>() {
+              public Color findValueByNumber(int number) {
+                return Color.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return gen.PersonProtos.Person.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final Color[] VALUES = values();
+
+      public static Color valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private Color(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:Person.Color)
+    }
+
+    /**
+     * Protobuf enum {@code Person.Cups}
+     */
+    public enum Cups
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>Mug = 0;</code>
+       */
+      Mug(0),
+      /**
+       * <code>Cup = 1;</code>
+       */
+      Cup(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>Mug = 0;</code>
+       */
+      public static final int Mug_VALUE = 0;
+      /**
+       * <code>Cup = 1;</code>
+       */
+      public static final int Cup_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static Cups valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static Cups forNumber(int value) {
+        switch (value) {
+          case 0: return Mug;
+          case 1: return Cup;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<Cups>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          Cups> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<Cups>() {
+              public Cups findValueByNumber(int number) {
+                return Cups.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return gen.PersonProtos.Person.getDescriptor().getEnumTypes().get(1);
+      }
+
+      private static final Cups[] VALUES = values();
+
+      public static Cups valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private Cups(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:Person.Cups)
+    }
+
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
@@ -1702,10 +1898,12 @@ public final class PersonProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033main/resources/Person.proto\"A\n\006Person\022" +
+      "\n\033main/resources/Person.proto\"w\n\006Person\022" +
       "\014\n\004name\030\001 \001(\t\022\016\n\006artist\030\002 \003(\t\022\031\n\007another" +
-      "\030\003 \003(\0132\010.Another\"\036\n\007Another\022\023\n\013anotherNa" +
-      "me\030\001 \001(\tB\023\n\003genB\014PersonProtosb\006proto3"
+      "\030\003 \003(\0132\010.Another\"\032\n\005Color\022\010\n\004BLUE\020\000\022\007\n\003R" +
+      "ED\020\001\"\030\n\004Cups\022\007\n\003Mug\020\000\022\007\n\003Cup\020\001\"\036\n\007Anothe" +
+      "r\022\023\n\013anotherName\030\001 \001(\tB\023\n\003genB\014PersonPro" +
+      "tosb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
