@@ -1,0 +1,16 @@
+// protoc --proto_path=src --java_out=src\main\java\protobuf Stuff src\main\resources\Person.proto
+
+syntax = "proto3";
+
+option java_package = "gen";
+option java_outer_classname = "PersonProtos";
+
+message Person {
+    string name = 1;
+    repeated string artist = 2;
+    repeated Another another = 3;
+}
+
+message Another {
+    string anotherName = 1;
+}
