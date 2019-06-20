@@ -1,0 +1,4 @@
+package dagga;
+
+interface Heater {
+}

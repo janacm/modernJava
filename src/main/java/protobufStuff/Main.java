@@ -5,6 +5,7 @@ import gen.PersonProtos;
 import gen.PersonProtos.Person;
 
 public class Main {
+
     public static void main(String[] args) {
         PersonProtos.Another another = PersonProtos.Another.newBuilder()
                 .setAnotherName("mr cool guys")
